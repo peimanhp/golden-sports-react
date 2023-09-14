@@ -15,6 +15,7 @@ import whiteShirt from "./images/white-shirt.png";
 import blueShirt from "./images/blue-shirt.png";
 import greenShirt from "./images/green-shirt.png";
 import tenPercentImg from "./images/10pic.png";
+import rightArrow from "./images/iconsax-linear-arrowright-2.svg";
 import flag1 from "./images/flag1.png";
 import flag2 from "./images/flag2.png";
 import flag3 from "./images/flag3.png";
@@ -143,6 +144,26 @@ function App() {
         <Container className="p-0">
           <hr className="line" />
         </Container>
+      </section>
+      <section className="d-flex justify-content-center">
+        <div className="subscribe-wrapper">
+          <form>
+            <h2 className="subscribe-title">Subscribe to Our Newsletter</h2>
+            <h3>Lorem ispem</h3>
+            <div className="d-flex justify-content-center">
+              <input type="email" name="email" placeholder="xxxx"/>
+              <button
+                className="btn d-flex justify-content-around align-items-center shop-btn"
+                type="submit"
+              >
+                <div className="back-gold d-flex justify-content-center align-items-center">
+                  <img src={rightArrow} alt="right-arrow" />
+                </div>
+                <p className="shop-text">Subscribe</p>
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
     </>
   );
