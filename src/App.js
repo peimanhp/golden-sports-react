@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import SportSuit from "./components/SportSuit";
+import ShopBtn from "./components/ShopBtn";
 
 import teamImg from "./images/emf-2022-jpegfull-120-copy-2.png";
 import goldenCircle from "./images/ellipse-80.svg";
@@ -14,8 +15,15 @@ import whiteShirt from "./images/white-shirt.png";
 import blueShirt from "./images/blue-shirt.png";
 import greenShirt from "./images/green-shirt.png";
 import tenPercentImg from "./images/10pic.png";
+import flag1 from "./images/flag1.png";
+import flag2 from "./images/flag2.png";
+import flag3 from "./images/flag3.png";
+import flag4 from "./images/flag4.png";
+import flag5 from "./images/flag5.png";
+import flag6 from "./images/flag6.png";
+
 import "./App.css";
-import ShopBtn from "./components/ShopBtn";
+import Flags from "./components/Flags";
 
 function App() {
   const [suits, setSuits] = useState([
@@ -54,6 +62,15 @@ function App() {
       name: "TKG-2203",
       price: "€389.00 - €939.00",
     },
+  ]);
+
+  const [flags, setFlags] = useState([
+    flag1,
+    flag2,
+    flag3,
+    flag4,
+    flag5,
+    flag6,
   ]);
 
   return (
@@ -110,6 +127,17 @@ function App() {
               </p>
               <ShopBtn />
             </Col>
+          </Row>
+        </Container>
+        <Container className="p-0">
+          <hr className="line" />
+        </Container>
+      </section>
+      <section>
+        <Container className="mb-4">
+          <h2 className="title-section-d">Lorem ispem</h2>
+          <Row className="row-gap-5" xs={2} md={3} xl={6}>
+            <Flags flags={flags} />
           </Row>
         </Container>
         <Container className="p-0">
