@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from "react-bootstrap/Container";
+import teamImg from "./images/emf-2022-jpegfull-120-copy-2.png";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container fluid>
+        <section className="d-flex justify-content-center section-a">
+          <div className="top-image-wrapper">
+            <img src={teamImg} className="team-photo" alt="team" />
+            <div className="rotated-text">
+              <p>
+                we are official PARTNER OF <br/> Austria Minifootball National Team
+              </p>
+            </div>
+          </div>
+        </section>
+      </Container>
+    </>
   );
 }
 

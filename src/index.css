@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --background: #181f21;
+  --sunset: #f2cc8f;
+  --gold: #f2cc8f;
+  --red: #f1604c;
+  --dark_red: #9f3b2e;
+  --white: #f8f8f8;
+  --gray: #d9d9d980;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;  
+}
+
+body {
+  background: var(--background) !important;
+  display: flex;
+  padding: 80px 94px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.section-a {
+  padding-top: 80px;
+}
+
+.top-image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 1240px;
+  height: 414px;
+  flex-shrink: 0;
+  border: 20px solid var(--gold);
+}
+
+.team-photo {
+  position: absolute;left: 30px;
+  bottom: 0;  
+  flex-shrink: 0;
+}
+
+.rotated-text { 
+  position: absolute;
+  right: -160px;
+  top: 100px; 
+  width: 375px;
+  height: 76px;
+  flex-shrink: 0;
+  color: var(--white);
+  transform: rotate(-90deg);
 }
