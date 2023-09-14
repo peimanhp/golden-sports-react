@@ -17,6 +17,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+  color: var(--white);
 }
 
 body {
@@ -62,6 +63,63 @@ body {
   transform: rotate(-90deg);
 }
 
+.site-title {
+  position: relative;
+  margin: 48px 0;
+  width: 55%;
+}
+
+.section-a h1 {
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 4.8px;
+}
+
+.section-a h3 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 4.35px;
+}
+
+.section-a h3 span {
+  color: var(--gold);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 4.35px;
+}
+
+.golden-circle {
+  position: absolute;
+  right: -180px;
+  top: -150px;
+  z-index: -1;
+}
+
+.back-gold {
+  width: 40px;
+  height: 40px;  
+  background-color: var(--gold);
+  border-radius: 50%;
+}
+
+.shop-btn {
+  width: 212px;
+  height: 40px;
+  margin-bottom: 18px;
+}
+
+.shop-text {
+  line-height: 0;
+  margin: 0 5px;
+  font-size: 20px; 
+  font-weight: 300; 
+}
+
+.line {
+  border: 1px solid #F8F8F8;
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 576px) {
   .top-image-wrapper {
     margin-left: 20px;
@@ -76,6 +134,26 @@ body {
     right: -185px;
     top: -140px;
   }
+  .site-title {
+    margin: 25px 0;
+  }
+  .section-a h1 {
+    font-size: 17px;
+    letter-spacing: 1.2px;
+  }
+  .section-a h3,
+  .section-a h3 span {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .golden-circle {
+    transform: scale(0.4);
+    right: -230px;
+    top: -220px;
+  }
+  .shop-btn {
+    transform: scale(0.6);    
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .golden-frame {
@@ -87,6 +165,26 @@ body {
     right: -180px;
     top: -105px;
   }
+  .section-a h1 {
+    font-size: 25px;
+    letter-spacing: 2.8px;
+  }
+  .site-title {
+    margin: 28px 0;
+  }
+  .section-a h3,
+  .section-a h3 span {
+    font-size: 15px;
+    letter-spacing: 2.35px;
+  }
+  .golden-circle {
+    transform: scale(0.4);
+    right: -230px;
+    top: -220px;
+  }
+  .shop-btn {
+    transform: scale(0.7);
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .golden-frame {
@@ -96,6 +194,20 @@ body {
     font-size: 0.6em;
     right: -170px;
     top: -60px;
+  }
+  .section-a h1 {
+    font-size: 35px;
+    letter-spacing: 2.8px;
+  }
+  .section-a h3,
+  .section-a h3 span {
+    font-size: 20px;
+    letter-spacing: 2.35px;
+  }
+  .golden-circle {
+    transform: scale(0.5);
+    right: -210px;
+    top: -190px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -108,6 +220,20 @@ body {
     right: -160px;
     top: 10px;
   }
+  .section-a h1 {
+    font-size: 45px;
+    letter-spacing: 3.8px;
+  }
+  .section-a h3,
+  .section-a h3 span {
+    font-size: 25px;
+    letter-spacing: 3.35px;
+  }
+  .golden-circle {
+    transform: scale(0.6);
+    right: -200px;
+    top: -180px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .golden-frame {
@@ -117,6 +243,15 @@ body {
   .rotated-text {
     right: -160px;
     top: 60px;
+  }
+  .section-a h1 {
+    font-size: 50px;
+    letter-spacing: 3.8px;
+  }
+  .section-a h3,
+  .section-a h3 span {
+    font-size: 30px;
+    letter-spacing: 3.35px;
   }
 }
 @media only screen and (min-width: 1400px) {
