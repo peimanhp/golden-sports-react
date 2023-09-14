@@ -1,17 +1,61 @@
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
+import SportSuit from "./components/SportSuit";
+
 import teamImg from "./images/emf-2022-jpegfull-120-copy-2.png";
 import goldenCircle from "./images/ellipse-80.svg";
 import rightArrow from "./images/iconsax-linear-arrowright-2.svg";
-import suitWrapper from "./images/suitWrapper.png";
-import addIcon from "./images/iconsax-linear-add.svg";
-import suitTitle from "./images/union.svg";
 import redSuit from "./images/red-suit.png";
+import yellowShirt from "./images/yellow-shirt.png";
+import whiteShirt from "./images/white-shirt.png";
+import blueShirt from "./images/blue-shirt.png";
+import greenShirt from "./images/green-shirt.png";
 import "./App.css";
 
 function App() {
+  const [suits, setSuits] = useState([
+    {
+      id: 1,
+      title: "New Collection",
+      image: redSuit,
+      name: "TKG-2203",
+      price: "€389.00 - €939.00",
+    },
+    {
+      id: 2,
+      title: "New Collection",
+      image: yellowShirt,
+      name: "TKG-2203",
+      price: "€389.00 - €939.00",
+    },
+    {
+      id: 3,
+      title: "New Collection",
+      image: whiteShirt,
+      name: "TKG-2203",
+      price: "€389.00 - €939.00",
+    },
+    {
+      id: 4,
+      title: "New Collection",
+      image: blueShirt,
+      name: "TKG-2203",
+      price: "€389.00 - €939.00",
+    },
+    {
+      id: 5,
+      title: "New Collection",
+      image: greenShirt,
+      name: "TKG-2203",
+      price: "€389.00 - €939.00",
+    },
+  ]);
+  
+  
   return (
     <>
       <section className="section-a">
@@ -50,31 +94,14 @@ function App() {
         </Container>
       </section>
       <section className="section-b">
-        <Container>
+        <Container className="mb-5">
           <h2>2022 COLLECTION</h2>
-          <Row xs={1} md={2} lg={4} xxl={5}>
-            <Col className="d-flex justify-content-center">
-              <div className="suit-div">
-                <img src={suitWrapper} alt="suit-wrapper" />
-                <img
-                  className="suit-title-wrapper"
-                  src={suitTitle}
-                  alt="suit-title"
-                />
-                <p className="suit-title">new collection</p>
-                <img className="suit" src={redSuit} />
-                <p className="suit-name">TKG-2203</p>
-                <p className="suit-price">€389.00 - €939.00</p>
-                <button className="plus-btn d-flex justify-content-center align-items-center">
-                  <img src={addIcon} alt="add-icon" />
-                </button>
-              </div>
-            </Col>
-            <Col className="text-center bg-danger">2 of 5</Col>
-            <Col className="text-center bg-danger">3 of 5</Col>
-            <Col className="text-center bg-danger">4 of 5</Col>
-            <Col className="text-center bg-danger">5 of 5</Col>
+          <Row className="row-gap-5" xs={1} md={2} lg={4} xxl={5}>
+            <SportSuit sportSuits={suits} />
           </Row>
+        </Container>
+        <Container className="p-0">
+          <hr className="line" />
         </Container>
       </section>
     </>
