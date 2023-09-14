@@ -100,10 +100,26 @@ div.container {
 }
 
 .back-gold {
+  position: absolute;
+  left: 0;
+  z-index: -1;
   width: 40px;
   height: 40px;
   background-color: var(--gold);
   border-radius: 50%;
+  animation-name: gold-back;
+  animation-duration: 0.5s;
+}
+
+.shop-btn:hover .back-gold {
+  animation-name: all-gold;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.shop-btn:hover .back-gold img {
+  background: black;
+  mask: url(./images/iconsax-linear-arrowright-2.svg);
 }
 
 .shop-btn {
@@ -117,6 +133,48 @@ div.container {
   margin: 0 5px;
   font-size: 20px;
   font-weight: 300;
+  transition: all 0.5s;
+}
+
+.shop-btn:hover .shop-text {
+  color: black;
+  transform: translateX(-20px);
+}
+
+@keyframes all-gold {
+  0% {
+    width: 40px;
+    border-radius: 50%;
+    transform: translateX(0px);
+    color: var(--white);
+  }
+  5% {
+    border-radius: 2em;
+  }
+  100% {
+    width: 100%;
+    border-radius: 2em;
+    transform: translateX(-20px);
+    color: black;
+  }
+}
+
+@keyframes gold-back {
+  0% {
+    width: 100%;
+    border-radius: 2em;
+    transform: translateX(-20px);
+    color: black;
+  }
+  95% {
+    border-radius: 2em;
+  }
+  100% {
+    width: 40px;
+    border-radius: 50%;
+    transform: translateX(0px);
+    color: var(--white);
+  }
 }
 
 .line {
@@ -243,6 +301,7 @@ div.container {
 .flag-wrapper {
   position: relative;
   width: fit-content;
+  
 }
 
 .flag {
@@ -250,9 +309,14 @@ div.container {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 0.3s;
 }
 
-
+.flag-wrapper:hover .flag {
+  top: 21px;
+  left: 21px;
+  transform: scale(1.3);
+}
 
 .subscribe-title {
   text-align: center;
@@ -290,10 +354,16 @@ div.container {
   font-size: 18px;
   font-weight: 300;
   padding-left: 1em;
+  transition: all 0.5s;
+}
+
+.subscribe-wrapper input:hover {
+  background-color: var(--gray);
+  color: var(--white);
 }
 
 .subscribe-wrapper form {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 @media only screen and (max-width: 576px) {

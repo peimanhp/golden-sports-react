@@ -152,14 +152,19 @@ function App() {
             <h3>Lorem ispem</h3>
             <Row className="text-center row-gap-3">
               <Col className="text-center">
-                <input type="email" name="email" placeholder="xxxx" />
+                <input
+                  id="subscribe"
+                  type="email"
+                  name="email"
+                  placeholder="xxxx"
+                />
               </Col>
               <Col className="d-flex justify-content-center">
                 <button
-                  className="btn d-flex justify-content-around align-items-center shop-btn"
+                  className="btn d-flex justify-content-around align-items-center shop-btn position-relative"
                   type="submit"
                 >
-                  <div className="back-gold d-flex justify-content-center align-items-center">
+                  <div className="back-gold d-flex align-items-center ps-2">
                     <img src={rightArrow} alt="right-arrow" />
                   </div>
                   <p className="shop-text">Subscribe</p>
