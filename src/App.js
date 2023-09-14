@@ -8,13 +8,14 @@ import SportSuit from "./components/SportSuit";
 
 import teamImg from "./images/emf-2022-jpegfull-120-copy-2.png";
 import goldenCircle from "./images/ellipse-80.svg";
-import rightArrow from "./images/iconsax-linear-arrowright-2.svg";
 import redSuit from "./images/red-suit.png";
 import yellowShirt from "./images/yellow-shirt.png";
 import whiteShirt from "./images/white-shirt.png";
 import blueShirt from "./images/blue-shirt.png";
 import greenShirt from "./images/green-shirt.png";
+import tenPercentImg from "./images/10pic.png";
 import "./App.css";
+import ShopBtn from "./components/ShopBtn";
 
 function App() {
   const [suits, setSuits] = useState([
@@ -54,8 +55,7 @@ function App() {
       price: "€389.00 - €939.00",
     },
   ]);
-  
-  
+
   return (
     <>
       <section className="section-a">
@@ -79,15 +79,7 @@ function App() {
               alt="golden-circle"
             />
           </div>
-          <a
-            href="#"
-            className="btn d-flex justify-content-around align-items-center shop-btn"
-          >
-            <div className="back-gold d-flex justify-content-center align-items-center">
-              <img src={rightArrow} alt="right-arrow" />
-            </div>
-            <p className="shop-text">Shop now</p>
-          </a>
+          <ShopBtn />
         </Container>
         <Container className="p-0">
           <hr className="line" />
@@ -98,6 +90,26 @@ function App() {
           <h2>2022 COLLECTION</h2>
           <Row className="row-gap-5" xs={1} md={2} lg={4} xxl={5}>
             <SportSuit sportSuits={suits} />
+          </Row>
+        </Container>
+        <Container className="p-0">
+          <hr className="line" />
+        </Container>
+      </section>
+      <section className="section-c">
+        <Container>
+          <Row className="row-gap-4" xs={1} md={1} lg={2}>
+            <Col className="text-center">
+              <Image src={tenPercentImg} alt="10percent" fluid />
+            </Col>
+            <Col className="text-section-c px-5">
+              <h2 className="title-section-c">NICHT VERPASSEN !</h2>
+              <p className="dec-section-c">
+                Vereine erhalten einen Nachlass von 10% vom Listenpreis.
+                Ausrüsterverträge können einen höheren Rabatt beinhalten.
+              </p>
+              <ShopBtn />
+            </Col>
           </Row>
         </Container>
         <Container className="p-0">

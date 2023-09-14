@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 * {
@@ -59,7 +59,7 @@ div.container {
 .rotated-text {
   position: absolute;
   right: -160px;
-  top: 100px;
+  top: 114px;
   width: 375px;
   height: 76px;
   flex-shrink: 0;
@@ -173,7 +173,7 @@ div.container {
   text-wrap: wrap;
   font-size: 7px;
   width: 40px;
-  text-align: center ;
+  text-align: center;
   line-height: 6.5px;
 }
 
@@ -188,7 +188,7 @@ div.container {
   bottom: -10px;
   left: 105px;
   font-size: 15px;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 .suit-price {
@@ -196,8 +196,33 @@ div.container {
   bottom: -38px;
   left: 105px;
   font-size: 10px;
-  font-weight: 500;  
+  font-weight: 500;
 }
+.title-section-c {
+  font-family: "Montserrat" !important;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 4.8px;
+  background: linear-gradient(
+    9deg,
+    #f2cc8f 0.61%,
+    #bb985f 20.03%,
+    #feecc8 46.54%,
+    #f2cc8f 55.54%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dec-section-c {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 16px;  
+  margin-bottom: 2em;
+}
+
 
 @media only screen and (max-width: 576px) {
   .top-image-wrapper {
@@ -209,32 +234,34 @@ div.container {
     margin-top: 70px;
   }
   .rotated-text {
-    font-size: 0.3em;
+    font-size: 0.25em;
     right: -185px;
     top: -140px;
   }
   .site-title {
+    width: 75%;
     margin: 25px 0;
   }
   .section-a h1 {
-    font-size: 17px;
+    font-size: 30px;
     letter-spacing: 1.2px;
   }
   .section-a h3,
   .section-a h3 span {
-    font-size: 10px;
+    font-size: 15px;
     letter-spacing: 1px;
   }
   .golden-circle {
     transform: scale(0.4);
-    right: -230px;
-    top: -220px;
+    right: -220px;
+    top: -200px;
   }
-  .shop-btn {
-    transform: scale(0.6);
-  }
+  
   .section-b h2 {
     font-size: 20px;
+    text-align: center;
+  }
+  .title-section-c , .dec-section-c {
     text-align: center;
   }
 }
@@ -244,9 +271,9 @@ div.container {
     border-width: 15px;
   }
   .rotated-text {
-    font-size: 0.4em;
+    font-size: 0.35em;
     right: -180px;
-    top: -105px;
+    top: -110px;
   }
   .section-a h1 {
     font-size: 25px;
@@ -264,9 +291,14 @@ div.container {
     transform: scale(0.4);
     right: -230px;
     top: -220px;
+  }  
+  .title-section-c {
+    text-align: center;
   }
-  .shop-btn {
-    transform: scale(0.7);
+}
+@media only screen and (min-width: 440px) and (max-width: 768px) {
+  .golden-frame {
+    min-height: 150px !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -274,7 +306,7 @@ div.container {
     min-height: 220px;
   }
   .rotated-text {
-    font-size: 0.6em;
+    font-size: 0.5em;
     right: -170px;
     top: -60px;
   }
@@ -292,6 +324,9 @@ div.container {
     right: -210px;
     top: -190px;
   }
+  .title-section-c {
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .golden-frame {
@@ -299,7 +334,7 @@ div.container {
     margin-top: 130px;
   }
   .rotated-text {
-    font-size: 0.8em;
+    font-size: 0.7em;
     right: -160px;
     top: 10px;
   }
@@ -317,6 +352,9 @@ div.container {
     right: -200px;
     top: -180px;
   }
+  .text-section-c {
+    padding-top: 60px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .golden-frame {
@@ -324,8 +362,9 @@ div.container {
     margin-top: 150px;
   }
   .rotated-text {
+    font-size: 0.9em;
     right: -160px;
-    top: 60px;
+    top: 70px;
   }
   .section-a h1 {
     font-size: 50px;
@@ -336,10 +375,19 @@ div.container {
     font-size: 30px;
     letter-spacing: 3.35px;
   }
+  .text-section-c {
+    padding-top: 60px;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .golden-frame {
     min-height: 414px;
     margin-top: 180px;
+  }
+  .text-section-c {
+    padding-top: 60px;
+  }
+  .title-section-c {
+  max-width: 10em;
   }
 }
