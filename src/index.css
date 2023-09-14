@@ -252,9 +252,7 @@ div.container {
   transform: translate(-50%, -50%);
 }
 
-.subscribe-wrapper {
-  width: 35%;
-}
+
 
 .subscribe-title {
   text-align: center;
@@ -292,7 +290,10 @@ div.container {
   font-size: 18px;
   font-weight: 300;
   padding-left: 1em;
-  margin-bottom: 80px;
+}
+
+.subscribe-wrapper form {
+    margin-bottom: 80px;
 }
 
 @media only screen and (max-width: 576px) {

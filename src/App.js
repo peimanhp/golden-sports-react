@@ -150,18 +150,22 @@ function App() {
           <form>
             <h2 className="subscribe-title">Subscribe to Our Newsletter</h2>
             <h3>Lorem ispem</h3>
-            <div className="d-flex justify-content-center">
-              <input type="email" name="email" placeholder="xxxx"/>
-              <button
-                className="btn d-flex justify-content-around align-items-center shop-btn"
-                type="submit"
-              >
-                <div className="back-gold d-flex justify-content-center align-items-center">
-                  <img src={rightArrow} alt="right-arrow" />
-                </div>
-                <p className="shop-text">Subscribe</p>
-              </button>
-            </div>
+            <Row className="text-center row-gap-3">
+              <Col className="text-center">
+                <input type="email" name="email" placeholder="xxxx" />
+              </Col>
+              <Col className="d-flex justify-content-center">
+                <button
+                  className="btn d-flex justify-content-around align-items-center shop-btn"
+                  type="submit"
+                >
+                  <div className="back-gold d-flex justify-content-center align-items-center">
+                    <img src={rightArrow} alt="right-arrow" />
+                  </div>
+                  <p className="shop-text">Subscribe</p>
+                </button>
+              </Col>
+            </Row>
           </form>
         </div>
       </section>
