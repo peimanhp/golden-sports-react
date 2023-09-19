@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/peimanhp/golden-sports-react/static/css/main.c5e8cca6.css",
+    "main.js": "/peimanhp/golden-sports-react/static/js/main.5567762a.js",
+    "static/js/787.649ffc7a.chunk.js": "/peimanhp/golden-sports-react/static/js/787.649ffc7a.chunk.js",
+    "static/media/emf-2022-jpegfull-120-copy-2.png": "/peimanhp/golden-sports-react/static/media/emf-2022-jpegfull-120-copy-2.df2898d2c999a392706e.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/peimanhp/golden-sports-react/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/10pic.png": "/peimanhp/golden-sports-react/static/media/10pic.05ef5513dcdff3fd6b08.png",
+    "static/media/red-suit.png": "/peimanhp/golden-sports-react/static/media/red-suit.c7a868458b96eaf5da40.png",
+    "static/media/yellow-shirt.png": "/peimanhp/golden-sports-react/static/media/yellow-shirt.435477c3619b337b3f98.png",
+    "static/media/green-shirt.png": "/peimanhp/golden-sports-react/static/media/green-shirt.56495ebfffc8486df02c.png",
+    "static/media/white-shirt.png": "/peimanhp/golden-sports-react/static/media/white-shirt.951a1d7f4a22528a8d50.png",
+    "static/media/blue-shirt.png": "/peimanhp/golden-sports-react/static/media/blue-shirt.21ac9911741e0e1c2454.png",
+    "static/media/flag1.png": "/peimanhp/golden-sports-react/static/media/flag1.dc0c36c108a3ef4866a4.png",
+    "static/media/flag3.png": "/peimanhp/golden-sports-react/static/media/flag3.daf9edca27b56100f8b4.png",
+    "static/media/flag6.png": "/peimanhp/golden-sports-react/static/media/flag6.abd81c9d7efd9cf04c8c.png",
+    "static/media/flag4.png": "/peimanhp/golden-sports-react/static/media/flag4.d34baa0a87fdfd64c324.png",
+    "static/media/flag2.png": "/peimanhp/golden-sports-react/static/media/flag2.816946772706384bda42.png",
+    "static/media/flag5.png": "/peimanhp/golden-sports-react/static/media/flag5.7ca6efde8e4daa548395.png",
+    "index.html": "/peimanhp/golden-sports-react/index.html",
+    "static/media/ellipse-80.svg": "/peimanhp/golden-sports-react/static/media/ellipse-80.aa275ae8a003c22c8aa8bc4931104401.svg",
+    "static/media/gold-ring.svg": "/peimanhp/golden-sports-react/static/media/gold-ring.e3f567911eab68925de1a8ca1450dc54.svg",
+    "static/media/union.svg": "/peimanhp/golden-sports-react/static/media/union.1bea1cb0f5e39089b6fe10181e9764bb.svg",
+    "static/media/iconsax-linear-arrowright-2.svg": "/peimanhp/golden-sports-react/static/media/iconsax-linear-arrowright-2.bf16c01c6e2fa76dbab391c4e6b15f50.svg",
+    "static/media/iconsax-linear-add.svg": "/peimanhp/golden-sports-react/static/media/iconsax-linear-add.f78ab99d2e1fbf36872fbc623dbb74ff.svg",
+    "main.c5e8cca6.css.map": "/peimanhp/golden-sports-react/static/css/main.c5e8cca6.css.map",
+    "main.5567762a.js.map": "/peimanhp/golden-sports-react/static/js/main.5567762a.js.map",
+    "787.649ffc7a.chunk.js.map": "/peimanhp/golden-sports-react/static/js/787.649ffc7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5e8cca6.css",
+    "static/js/main.5567762a.js"
+  ]
+}
